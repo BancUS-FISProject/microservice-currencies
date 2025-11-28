@@ -20,7 +20,6 @@ public class CurrencyController {
         this.currencyService = currencyService;
     }
 
-    // Ejemplo: GET /api/v1/currency/convert?from=EUR&to=JPY&amount=100
     @GetMapping("/convert")
     public ResponseEntity<Map<String, Object>> convert(
             @RequestParam String from,
