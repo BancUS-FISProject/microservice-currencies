@@ -25,7 +25,7 @@ public class CacheScheduler {
         this.rateProvider = rateProvider;
     }
 
-    @Scheduled(cron = "0 0 * * * ?")
+    @Scheduled(cron = "0 */20 * * * ?")
     public void updateTopCurrencies() {
         log.info("--- Iniciando tarea programada de actualización de divisas ---");
 
