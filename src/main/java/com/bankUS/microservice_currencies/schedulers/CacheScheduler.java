@@ -16,7 +16,6 @@ public class CacheScheduler {
 
     private static final Logger log = LoggerFactory.getLogger(CacheScheduler.class);
 
-    // Monedas que queremos mantener siempre rápidas (Calientes)
     private static final List<String> TOP_CURRENCIES = List.of("USD");
 
     private final CacheProvider rateProvider;
